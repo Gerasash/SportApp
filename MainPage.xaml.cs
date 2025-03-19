@@ -25,6 +25,9 @@ namespace SportApp
         {
             string workoutName = WorkoutNameEntry.Text;
 
+            if (workoutName == null) {
+                workoutName = "";
+            }
             // Добавляем новую тренировку в коллекцию
             Workouts.Add(new Workout(workoutName));
 
@@ -48,13 +51,12 @@ namespace SportApp
             // Сброс выбора
             WorkoutListView.SelectedItem = null;
 
-
         }
         //для перехода на ToTheWorkout
-        private async void ToTheWorkout(object? sender, EventArgs e)
+        /*private async void ToTheWorkout(object? sender, EventArgs e)
         {
             await Navigation.PushAsync(new TheWorkout());
-        }
+        }*/
         private async void OnDeleteWorkoutClicked(object sender, EventArgs e)
         {
             // Получаем выбранную тренировку из CommandParameter

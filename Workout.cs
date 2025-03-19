@@ -19,7 +19,7 @@ namespace SportApp
         }
         public Workout(string name)
         {
-            Name = name ?? "Unknown";
+            Name = name!= "" ?name: "Unknown";
             StartTime = DateTime.Now;
         }
         public Workout(DateTime time)
@@ -29,7 +29,7 @@ namespace SportApp
         }
         public Workout(string name, DateTime time)
         {
-            Name = name ?? "Unknown";
+            Name = name != "" ? name : "Unknown";
             StartTime = time;
         }
     }
