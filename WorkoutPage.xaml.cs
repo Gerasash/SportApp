@@ -1,12 +1,17 @@
 namespace SportApp;
 using Microsoft.Maui.Controls;
 using System.Security.AccessControl;
-
+using SQLite;
+using System.Collections.ObjectModel;
 public partial class TheWorkout : ContentPage
 {
-	public TheWorkout(Workout workout)
+    /*private readonly LocalDBService _dbService;
+    private int _editUserId;*/
+
+    public TheWorkout(Workout workout)
 	{
         InitializeComponent();
+/*        _dbService = dbService;*/
 
         // ”станавливаем данные тренировки на странице
         WorkoutNameLabel.Text = workout.Name;
@@ -32,8 +37,8 @@ public partial class TheWorkout : ContentPage
     {
         await Navigation.PushModalAsync(new AddExersciseModalPage());
     }
-    private async void ToCommonPage(object? sender, EventArgs e)
+/*    private async void ToCommonPage(object? sender, EventArgs e)
     {
         await Navigation.PushAsync(new MainPage());
-    }
+    }*/
 }
