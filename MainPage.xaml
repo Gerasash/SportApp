@@ -7,8 +7,17 @@
         
         <!-- Поле для ввода названия тренировки -->
         <Entry x:Name="WorkoutNameEntry" 
-               Placeholder="Введите название тренировки" />
-
+                Placeholder="Введите название тренировки" />
+        
+        <!-- Поле для выбора даты и времени тренировки -->
+        <Label x:Name="labelTime" Text="Выберите дату"/>
+        <DatePicker x:Name="WorkoutDatePicker" Format="d">
+            <DatePicker.MinimumDate>1/1/2010</DatePicker.MinimumDate>
+            <DatePicker.MaximumDate>1/1/2040</DatePicker.MaximumDate>
+        </DatePicker>
+        <TimePicker x:Name="WorkoutTimePicker">
+            
+        </TimePicker>
         <!-- Кнопка для добавления тренировки -->
         <Button Text="Добавить тренировку" 
                 Clicked="OnAddWorkoutClicked" />

@@ -27,6 +27,7 @@ namespace SportApp
         }
         private async void saveButton_Clicked(object sender, EventArgs e)
         {
+            //Если одно из полей пустое то 
             if (string.IsNullOrEmpty(nameEntryField.Text)&& 
                 string.IsNullOrEmpty(emailEntryField.Text)&& 
                 string.IsNullOrEmpty(mobileEntryField.Text))
@@ -88,19 +89,18 @@ namespace SportApp
         private void OnAddWorkoutClicked(object sender, System.EventArgs e)
         {
             string workoutName = WorkoutNameEntry.Text;
-
-            if (workoutName == null) {
-                workoutName = "";
-            }
+            DateTime selectedDate = WorkoutDatePicker.Date;
+            TimeSpan selectedTime = WorkoutTimePicker.Time;
+            if (workoutName == null) workoutName = "";
+            selectedDate += selectedTime;
             // Добавляем новую тренировку в коллекцию
-            Workouts.Add(new Workout(workoutName));
-
+            Workouts.Add(new Workout(workoutName, selectedDate));
 
             // Очищаем поле ввода
             WorkoutNameEntry.Text = string.Empty;
 
         }
-
+        
         // Обработчик события выбора тренировки
         private async void OnWorkoutSelected(object sender, SelectedItemChangedEventArgs e)
         {

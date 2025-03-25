@@ -8,7 +8,6 @@ namespace SportApp
 {
     public class Workout
     {
-
         public string Name { get; set; }
         public DateTime StartTime { get; set; }
 
