@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SportApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SportApp
 {
@@ -10,25 +12,11 @@ namespace SportApp
     {
         public string Name { get; set; }
         public DateTime StartTime { get; set; }
+        public Workout(string name, DateTime time )
+        {
+            if (String.IsNullOrEmpty(name)) Name = "Unknown";
+            else Name = name;
 
-        public Workout()
-        {
-            Name = "Unknown";
-            StartTime = DateTime.Now;
-        }
-        public Workout(string name)
-        {
-            Name = name!= "" ?name: "Unknown";
-            StartTime = DateTime.Now;
-        }
-        public Workout(DateTime time)
-        {
-            Name = "Unknown";
-            StartTime = time;
-        }
-        public Workout(string name, DateTime time)
-        {
-            Name = name != "" ? name : "Unknown";
             StartTime = time;
         }
     }

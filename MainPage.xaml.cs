@@ -86,21 +86,23 @@ namespace SportApp
             }
         }
         // Обработчик нажатия на кнопку "Добавить тренировку"
+        
         private void OnAddWorkoutClicked(object sender, System.EventArgs e)
         {
-            string workoutName = WorkoutNameEntry.Text;
             DateTime selectedDate = WorkoutDatePicker.Date;
             TimeSpan selectedTime = WorkoutTimePicker.Time;
-            if (workoutName == null) workoutName = "";
             selectedDate += selectedTime;
+
+            string workoutName = WorkoutNameEntry.Text;
+            /*if (workoutName == null) workoutName = "";*/
+
             // Добавляем новую тренировку в коллекцию
-            Workouts.Add(new Workout(workoutName, selectedDate));
+            Workouts.Add(new Workout(workoutName,selectedDate ));
 
             // Очищаем поле ввода
             WorkoutNameEntry.Text = string.Empty;
 
         }
-        
         // Обработчик события выбора тренировки
         private async void OnWorkoutSelected(object sender, SelectedItemChangedEventArgs e)
         {
