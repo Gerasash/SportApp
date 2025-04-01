@@ -1,9 +1,9 @@
-﻿using SQLite;
+﻿//Файл MainPage
+using SQLite;
 using System.Collections.ObjectModel;
 using System.Security.AccessControl;
 using Microsoft.Maui.Controls;
 using System.Reflection;
-using Microsoft.UI.Xaml;
 
 namespace SportApp
 {
@@ -25,6 +25,7 @@ namespace SportApp
             // Добавляем обработчик события выбора тренировки
             WorkoutListView.ItemSelected += OnWorkoutSelected;
         }
+        
         private async void saveButton_Clicked(object sender, EventArgs e)
         {
             //Если одно из полей пустое то 
@@ -66,8 +67,8 @@ namespace SportApp
 
                 }
             }
-            
         }
+
         private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var user = (User)e.Item;
@@ -103,6 +104,7 @@ namespace SportApp
             WorkoutNameEntry.Text = string.Empty;
 
         }
+
         // Обработчик события выбора тренировки
         private async void OnWorkoutSelected(object sender, SelectedItemChangedEventArgs e)
         {

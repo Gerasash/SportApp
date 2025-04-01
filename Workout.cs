@@ -1,4 +1,5 @@
-﻿using SportApp;
+﻿//Файл Workout.cs
+using SportApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;

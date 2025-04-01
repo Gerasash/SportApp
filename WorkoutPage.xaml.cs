@@ -11,7 +11,6 @@ public partial class TheWorkout : ContentPage
     public TheWorkout(Workout workout)
 	{
         InitializeComponent();
-/*        _dbService = dbService;*/
 
         // Устанавливаем данные тренировки на странице
         WorkoutNameLabel.Text = workout.Name;
@@ -25,7 +24,6 @@ public partial class TheWorkout : ContentPage
         Button addExerciseButton = new Button { Text = "Добавить упражнение", HorizontalOptions = LayoutOptions.Start };
         addExerciseButton.Clicked += ToModalPage;
 
-
         // Добавляем элементы на страницу
         Content = new StackLayout
         {
@@ -37,8 +35,4 @@ public partial class TheWorkout : ContentPage
     {
         await Navigation.PushModalAsync(new AddExersciseModalPage());
     }
-/*    private async void ToCommonPage(object? sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new MainPage());
-    }*/
 }

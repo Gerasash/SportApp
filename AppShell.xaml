@@ -6,7 +6,23 @@
     xmlns:local="clr-namespace:SportApp"
     Shell.FlyoutBehavior="Flyout"
     Title="SportApp">
+    
+    <Shell.ToolbarItems>
+        <ToolbarItem Text="Настройки" IconImageSource="settings.png"
+                     Order="Primary" Priority="0"
+                     Clicked="OnSettingsClicked"/>
+    </Shell.ToolbarItems>
 
+    <TabBar>
+        <Tab Title="Главная">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Профиль">
+            <ShellContent ContentTemplate="{DataTemplate local:TheWorkout}" />
+        </Tab>
+        
+    </TabBar>
+    
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
