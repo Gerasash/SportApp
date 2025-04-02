@@ -12,6 +12,7 @@ namespace SportApp
     public class Workout
     {
         public string Name { get; set; }
+        public string MuscleGruoup { get; set; }
         public DateTime StartTime { get; set; }
         public Workout(string name, DateTime time )
         {
