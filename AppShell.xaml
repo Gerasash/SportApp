@@ -13,19 +13,14 @@
                      Clicked="OnSettingsClicked"/>
     </Shell.ToolbarItems>
 
-    <TabBar>
-        <Tab Title="Главная">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-        <Tab Title="Профиль">
-            <ShellContent ContentTemplate="{DataTemplate local:TheWorkout}" />
-        </Tab>
-        
-    </TabBar>
     
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Настройки"
+        ContentTemplate="{DataTemplate local:SettingsPage}"
+        Route="SettingsPage" />
 </Shell>

@@ -7,9 +7,10 @@
             InitializeComponent();
 
         }
-        private void OnSettingsClicked(object sender, EventArgs e)
+        private async void OnSettingsClicked(object sender, EventArgs e)
         {
-            DisplayAlert("Добавление", "Вы нажали кнопку добавить!", "OK");
+            await Shell.Current.GoToAsync("//SettingsPage");
         }
+
     }
 }

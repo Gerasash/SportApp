@@ -20,7 +20,7 @@
             </Picker.Items>
         </Picker>
         <Label x:Name="WorkoutDescriptionLabel" />
-
+        <Editor FontSize="16" HeightRequest="200" />
     </StackLayout>
 </ContentPage>
 

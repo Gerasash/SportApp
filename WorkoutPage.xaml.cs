@@ -3,7 +3,6 @@ using Microsoft.Maui.Controls;
 using System.Security.AccessControl;
 using SQLite;
 using System.Collections.ObjectModel;
-using CommunityToolkit.Maui.Views;
 
 public partial class TheWorkout : ContentPage
 {

@@ -8,16 +8,25 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM32 = Debug|ARM32
 		Release|Any CPU = Release|Any CPU
+		Release|ARM32 = Release|ARM32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Debug|ARM32.Build.0 = Debug|ARM32
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|ARM32.ActiveCfg = Debug|Any CPU
+		{633FB59B-0091-49A9-BBC6-E622F18F2F19}.Release|ARM32.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {939C621E-4A26-4893-B540-29B8A836C5F4}
 	EndGlobalSection
 EndGlobal
