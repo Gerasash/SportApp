@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace SportApp
     {
         private const string DB_NAME = "DemoLocaLDb.db3";
         private readonly SQLiteAsyncConnection _conection;
+
         public LocalDBService()
         {
             _conection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME));

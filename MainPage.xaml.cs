@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Security.AccessControl;
 using Microsoft.Maui.Controls;
 using System.Reflection;
+using SportApp.ViewModels;
+using System.Diagnostics;
 
 namespace SportApp
 {
@@ -17,6 +19,8 @@ namespace SportApp
         public MainPage(LocalDBService dbService)
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
+            
             _dbService = dbService;
             Task.Run(async () => listView.ItemsSource = await _dbService.GetUser());
 
