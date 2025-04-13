@@ -6,6 +6,7 @@ using Microsoft.Maui.Controls;
 using System.Reflection;
 using SportApp.ViewModels;
 using System.Diagnostics;
+using SportApp.Models;
 
 namespace SportApp
 {

@@ -1,5 +1,4 @@
 ﻿//Файл Workout.cs
-using SportApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace SportApp
+namespace SportApp.Models
 {
     public class Workout
     {
@@ -16,7 +15,7 @@ namespace SportApp
         public DateTime StartTime { get; set; }
         public Workout(string name, DateTime time )
         {
-            if (String.IsNullOrEmpty(name)) Name = "Unknown";
+            if (string.IsNullOrEmpty(name)) Name = "Unknown";
             else Name = name;
 
             StartTime = time;

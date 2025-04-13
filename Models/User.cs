@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportApp
+namespace SportApp.Models
 {
     [Table("User")]
     public class User

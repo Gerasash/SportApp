@@ -3,6 +3,7 @@ using Microsoft.Maui.Controls;
 using System.Security.AccessControl;
 using SQLite;
 using System.Collections.ObjectModel;
+using SportApp.Models;
 
 public partial class TheWorkout : ContentPage
 {

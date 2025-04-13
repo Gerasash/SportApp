@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using SportApp.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
